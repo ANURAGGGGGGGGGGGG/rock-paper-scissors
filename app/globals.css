@@ -32,6 +32,20 @@ body {
   }
 }
 
+@media (max-width: 426px) {
+  .rps-responsive-row {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+  }
+  .rps-responsive-btn {
+    width: 80vw !important;
+    max-width: 300px !important;
+    min-width: 120px !important;
+    padding: 1.5rem !important;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

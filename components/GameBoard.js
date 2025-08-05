@@ -114,13 +114,13 @@ export default function GameBoard({ mode, matchType, onScoreUpdate, onGameComple
         Round {round} of {matchType}
       </div>
       
-      <div className="flex gap-8">
+      <div className="flex gap-8 rps-responsive-row">
         {choices.map(({ id, icon, color }) => (
           <button
             key={id}
             onClick={() => handleChoice(id)}
             disabled={!!playerChoice || isAnimating}
-            className={`group relative overflow-hidden rounded-xl p-8 transition-all duration-300 
+            className={`group relative overflow-hidden rounded-xl p-8 transition-all duration-300 rps-responsive-btn 
               ${playerChoice === id 
                 ? 'scale-110 shadow-2xl' 
                 : 'hover:scale-105 hover:shadow-xl'
